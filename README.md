@@ -25,9 +25,10 @@ cd TalaTrack
 # Data Acquisition
 
 Motion data acquisition is performed using three dedicated scripts. Depending on the specific experimental setup, the number of markers and marker IDs may need to be adapted.
-	1. After marker placement and calibration, the script ZwickCoordConfiguration.m is executed to define the anatomical coordinate system.
-	2. Range of motion acquisition, the script ROM_Subtalar.m is used to capture range of motion during the talar tilt test.
-	3. Cyclic loading acquisition, Prior to cyclic loading, DataAcquisition.m is executed. Data recording is triggered by the Zwick testing machine during cyclic loading of the specimen.
+
+1. **Coordinate System Definition** - After marker placement and calibration, the script `ZwickCoordConfiguration.m` is executed to define the anatomical coordinate system.
+2. **Range of Motion Acquisition** - The script `ROM_Subtalar.m` is used to capture range of motion during the talar tilt test.
+3. **Cyclic Loading Acquisition** - Prior to cyclic loading, `DataAcquisition.m` is executed. Data recording is triggered by the Zwick testing machine during cyclic loading of the specimen.
 
 # Motion Tracking Analysis
 
