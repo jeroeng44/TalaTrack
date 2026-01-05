@@ -33,28 +33,29 @@ Motion data acquisition is performed using three dedicated scripts. Depending on
 
 Before running the analysis, the data directory should follow the structure below:
 
+```
 00_ZwickCoordConfig/
-  └── *.mat                     % output from ZwickCoordConfiguration.m
+└── *.mat                          % output from ZwickCoordConfiguration.m
 
 01_CT_Data/Segmentation/
-  ├── *.json                    % fiducial marker definitions
-  ├── *.stl                     % bone segmentations
-  └── ITCL_Vectors.csv          % anatomical axes definitions
+├── *.json                         % fiducial marker definitions
+├── *.stl                          % bone segmentations
+└── ITCL_Vectors.csv               % anatomical axes definitions
 
 02_MotionMarker_Data/
-  └── ConditionName/
-      └── *.mat                 % motion marker recordings
+└── ConditionName/
+    └── *.mat                      % motion marker recordings
 
 03_Output/
-  └──                            % processed kinematic data
+└──                                % processed kinematic data
+```
 
+After motion tracking data have been captured and stored according to this structure, analysis is performed using the scripts in the `02_motion_tracking_analysis` folder:
 
-After motion tracking data have been captured and stored according to this structure, analysis is performed using the scripts in the 02_motion_tracking_analysis folder.
-	•	In RelevantDIRs.m, update the paths to match your local data locations.
-	•	Run the main analysis script:
-010_SingleExp_3DVectorsZwickCoords.m
+- In `ITCL_011_Get_RelevantDIRs.m`, update the paths to match your local data locations
+- Run the main analysis script: `ITCL_010_SingleExp_3DVectorsZwickCoords.m`
 
-Processed kinematic outputs will be saved automatically to the 03_Output directory.
+Processed kinematic outputs will be saved automatically to the `03_Output` directory.
 
 # Visualisation
 The .mlapp file located in the 04_visualisation folder provides an interactive interface to inspect results, visualize bone geometries, and verify transformations in the camera coordinate system. This tool is intended for qualitative validation and sanity checking of the motion-tracking pipeline.
