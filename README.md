@@ -8,7 +8,7 @@
   - [Set-up](#set-up)
 - [Data Acquisition](#data-acquisition)
 - [Motion Tracking Analysis](#motion-tracking-analysis)
-- [visualisation](#visualisation)
+- [Visualisation](#visualisation)
 - [Citation](#citation)
     - [TBD](#tbd)
 
